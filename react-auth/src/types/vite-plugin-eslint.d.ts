@@ -1,15 +1,8 @@
-import { Plugin } from 'vite';
-
 declare module 'vite-plugin-eslint' {
+  import { Plugin } from 'vite';
   interface Options {
-    include?: string | string[];
-    exclude?: string | string[];
-    cache?: boolean;
-    failOnWarning?: boolean;
-    failOnError?: boolean;
-    throwOnWarning?: boolean;
-    throwOnError?: boolean;
+    include?: string[];
   }
-
-  export default function eslintPlugin(options?: Options): Plugin;
+  function eslintPlugin(options?: Options): Plugin;
+  export default eslintPlugin;
 }
