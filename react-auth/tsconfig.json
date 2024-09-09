@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
-    "typeRoots": ["./node_modules/@types", "./src/types"]
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./node_modules/@types", "./src/types"],
   },
   "files": [],
   "references": [
